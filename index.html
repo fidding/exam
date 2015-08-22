@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>脑洞测试</title>
+
+<link href="css/exam.css" rel="stylesheet" media="screen" type="text/css" />
+<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="js/sha1.js" type="text/javascript"></script>
+<script src="js/exam.js" type="text/javascript"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
+</head>
+<body>
+<audio id="musicbg" src="media/bg.mp3" autoplay="autoplay" loop="loop"></audio>
+<audio id="musicerror" src="media/error.mp3" preload="auto"></audio>
+<audio id="musicgood" src="media/good.mp3" preload="auto"></audio>
+<audio id="musicclick1" src="media/click.mp3" preload="auto"></audio>
+<audio id="musicclick2" src="media/click.mp3" preload="auto"></audio>
+<audio id="musicclick3" src="media/click.mp3" preload="auto"></audio>
+<div class="w" id='w'>
+	<div class="index" >
+		<img src="img/index.png" />
+
+		<span>
+			<img class='startquestion' src='img/start.png' />
+		</span>
+	</div>
+
+	<ul class="test" >
+		<li class="p1" >
+			<p>如何利用一块钱犯法最严重</p>
+			<img class="apiece" data-height="385" data-top="510" data-ltc="-120" src="img/page1.gif"/>
+			<img class="nextquestion" data-question="3" data-select="0" src="img/nextquestion.png"/>
+			<ul class="question" data-question="1">
+				<li>
+					<a class="q">A：烧掉 </a>
+				
+				</li>
+				<li>
+					<a class="q">B：扔掉引起争抢</a>
+				</li>
+				<li>
+					<a class="q">C：放洗衣机</a>
+				</li>
+				<li>
+					<a class="q">D：强行买2块钱的东西</a>
+				</li>
+			</ul>
+		</li>
+		<li class="p2" >
+			<p>失足少女越来越多 哪个场所人满为患</p>	
+			<img class="apiece" data-height="376" data-top="527" data-ltc="-120" src="img/page2.gif"/>
+			<img class="nextquestion" data-question="1" data-select="0" src="img/nextquestion.png"/>
+			<ul class="question" data-question="2">
+				<li>
+					<a class="q">A：医院</a>
+				
+				</li>
+				<li>
+					<a class="q">B：发廊</a>
+				</li>
+				<li>
+					<a class="q">C：足浴</a>
+				</li>
+				<li>
+					<a class="q">D：按摩</a>
+				</li>
+			</ul>
+			
+		</li>
+		<li class="p3" >
+			<p>要结婚的时候隔壁家住着谁比较没有安全感</p>
+			<img class="apiece" data-height="363" data-top="257" data-ltc="-120" src="img/page3.gif"/>
+			<img class="nextquestion" data-question="2" data-select="0" src="img/nextquestion.png"/>
+			<ul class="question" data-question="3">
+				<li>
+					<a class="q">A：吴彦祖</a>
+				
+				</li>
+				<li>
+					<a class="q">B：王思聪</a>
+				</li>
+				<li>
+					<a class="q">C：马云</a>
+				</li>
+				<li>
+					<a class="q">D：李易峰</a>
+				</li>
+			</ul>
+			<img class="nextquestion" data-question="2" data-select="0" src="img/nextquestion.png"/>
+		</li>
+		<li class="p4">
+			<p>看哪部电视剧耗时最长</p>
+			<img class="apiece" data-height="362" data-top="560" data-ltc="-120" src="img/page4.gif"/>
+			<img class="nextquestion" data-question="3" data-select="0" src="img/nextquestion.png"/>
+			<ul class="question" data-question="4">
+				<li>
+					<a class="q">A：千金女贼</a>
+				
+				</li>
+				<li>
+					<a class="q">B：黑猫警长</a>
+				</li>
+				<li>
+					<a class="q">C：神雕侠侣</a>
+				</li>
+				<li>
+					<a class="q">D：一起来看流星雨</a>
+				</li>
+			</ul>
+			
+		</li>
+		<li class="p5" >
+			<p>看哪部动漫最容易打起来</p>
+			<img class="apiece" data-height="329" data-top="562" data-ltc="-120" src="img/page5.gif"/>
+			<img class="nextquestion" data-question="3" data-select="0" src="img/nextquestion.png"/>
+			<ul class="question" data-question="5">
+				<li>
+					<a class="q">A：火影忍者</a>
+				
+				</li>
+				<li>
+					<a class="q">B：海贼王</a>
+				</li>
+				<li>
+					<a class="q">C：黑子的篮球</a>
+				</li>
+				<li>
+					<a class="q">D：名侦探柯南</a>
+				</li>
+			</ul>
+			
+		</li>
+		<li class="p6" >
+			<p>以下哪个绝对不能喝</p>
+			<img class="apiece" data-height="351" data-top="257" data-ltc="-120" src="img/page1.gif"/>
+			<img class="nextquestion" data-question="1" data-select="0" src="img/nextquestion.png"/>
+			<ul class="question" data-question="6">
+				<li>
+					<a class="q">A：热水壶刚烧出来的热水</a>
+				
+				</li>
+				<li>
+					<a class="q">B：隔夜放置的水</a>
+				</li>
+				<li>
+					<a class="q">C：反复烧过的水</a>
+				</li>
+				<li>
+					<a class="q">D：口水</a>
+				</li>
+			</ul>
+			
+		</li>
+	</ul>
+	<div class="error">
+		<span>
+			<img class="error-again" src='img/again.png' />
+		</span>
+		<div class="error-title">
+			脑子转不过弯了吗？快点击查看答案吧~
+		</div>
+		<div class='error-img'>
+			<img src='img/false.gif'/>
+		</div>
+		<a class="dictionary">
+			<img class="lookanswer" src='img/lookanswer.png' />
+		</a>
+	</div>
+	
+	<div class='answer'>
+		<span>
+			<img class="error-again" src='img/again.png' />
+		</span>
+		<div class="answer-title">
+		</div>
+		<div class='answer-img'>
+			<img src='img/page2.gif'/>
+		</div>
+		<a class="dictionary">
+			<img class="good-dictionary" src='img/answer.png' />
+		</a>
+	</div>
+	
+	<div class="good">
+		<span>
+			<img class="company-web" src='img/other.png' />
+		</span>
+		<div class="good-title">
+			少年！你竟然走到了这一步！<br>
+			快去用智商碾压你的小伙伴吧~
+		</div>
+		<div class='good-img'>
+			<img src='img/last.png'/>
+		</div>
+		<a class="dictionary" >
+			<img class="good-dictionary" src='img/answer.png' />
+		</a>	
+	</div>
+	<div class="music apiece" data-height="70" data-width="80" data-top="20" data-right="20">
+		<img class="on" src="img/on.png"/>
+		<img class="off" src="img/off.png"/>
+	</div>
+	<div class="logo apiece" data-height="80" data-width="250" data-top="20" data-right="100">
+		<img src="img/logo.png" />
+	</div>
+</div>
+</body>
+</html>
