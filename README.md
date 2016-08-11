@@ -3,4 +3,4 @@
 
 ## DEMO
 
- 演示地址http://fidding.github.io/exam
+ 演示地址 https://fidding.github.io/exam
